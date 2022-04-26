@@ -36,6 +36,10 @@ a:hover{
     text-decoration: underline;
 }
 
+img.test {
+    width: 100%;
+    height: auto;
+}
 /* == Header */
 
 header{
