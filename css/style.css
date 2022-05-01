@@ -40,6 +40,12 @@ img.test {
     width: 100%;
     height: auto;
 }
+img.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
 /* == Header */
 
 header{
