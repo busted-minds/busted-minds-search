@@ -1,10 +1,6 @@
-# Google Custom Search Engine
+# Custom Search Engine
 
-
-Simple Google Custom Search Engine
-
-
-##[Go to live](https://sajith-dilshan.github.io/Google-Custom-Search-Engine/)
+##[Go to live](https://yasar-arafath.github.io/Search-Engine)
 
 
 
@@ -23,5 +19,5 @@ Simple Google Custom Search Engine
 
 
 ## License
-Copyright © 2022 sajith-dilshan. All Rights Reserved.
+Copyright © 2022 yasar arafat. All Rights Reserved.
 License under the [MIT](License.txt) License.
