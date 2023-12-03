@@ -1,33 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<!-- Add this line to include Font Awesome CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <!-- Your existing code remains unchanged here -->
+
+    <style>
+        /* Add some styling for the icons and text */
+        #icon-wrapper {
+            display: flex;
+            justify-content: center; /* Center the icons horizontally */
+            margin-top: 10px;
+        }
+
+        #icon-wrapper div {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 0 18px; /* Add some spacing between icons */
+            margin-bottom: 15px; /* Adjust the margin as needed */
+        }
+
+        #icon-wrapper i {
+            font-size: 24px;
+            margin-bottom: 5px; /* Adjust the margin as needed */
+        }
+		
+		#icon-wrapper img {
+            width: 40px; /* Adjust the width of the image as needed */
+            height: 40px; /* Adjust the height of the image as needed */
+            margin-bottom: 5px; /* Adjust the margin as needed */
+		}
+    </style>
+
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"> <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png"> <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"> <link rel="manifest" href="/site.webmanifest"> <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"> <meta name="msapplication-TileColor" content="#da532c"> <meta name="theme-color" content="#ffffff">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Busted Minds Search</title>
-<meta name='description' content='Busted Minds Search helps you turn information into action, making it faster and easier to go from searching to doing.<h1> Busted Minds Search is a search engine for searching privately. The search engine is ceated by Busted Minds</h1> '>.
+<meta name='description' content='Busted Minds Search helps you turn information into action, making it faster and easier to go from searching to doing. '>.
     <link rel="icon" href="image/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="node_modules/reset.css/reset.css">
     <link rel="stylesheet" href="css/style.css">
+	
+	
 </head>
 <body width = "device-width">
 
 <header>
-    <a id="sign-in" target="_blank" href="https://busted-minds.github.io">Home</a>
-    <a id="sign-in" target="_blank" href="https://search.bustedminds.cf/search-result.html?q=images">Images</a>
-    <a id="sign-in" target="_blank" href="https://busted-minds.github.io/news.htm">News</a>
-    <a id="sign-in" target="_blank" href="https://busted-minds.github.io/games">Games</a>
-    <a id="sign-in" target="_blank" href="https://busted-minds.github.io/livescore.htm">Sports</a>
-</header>
+
 </header>
   <!-- Start Main Element -->
     <main>
         <div id="logo-wrapper">
-            <img src="image/google.png">
+            <img src="image/google.png" alt="Busted Minds Search">
         </div>
         <div id="form-wrapper">
-            <form action="search-result.html" method="GET" enctype="application/x-www-form-urlencoded">
+            <form action="search.html" method="GET" enctype="application/x-www-form-urlencoded">
                 <div id="search-wrapper">
                     <div id="icon-search">
                         <svg focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"></path></svg>
@@ -42,13 +72,85 @@
         </form>
                 </div>
         </div>
+		
+		<div id="icon-wrapper">
+        <div>
+	    <a href="https://www.bustedminds.cf">
+            <img src="image/bm.jpg" alt="Busted Minds"></a>
+            <span>Home</span>
+        </div>
+        <div>
+		<a href="https://search.bustedminds.cf/search-result.html?q=images#gsc.tab=1&gsc.q=images">
+            <img src="image/picture.png" alt="Images"></a>
+            <span>Images</span>
+        </div>
+		<div>
+				    <a href="https://search.bustedminds.cf/search-result.html?q=mail">
+            <img src="image/mail.png" alt="Mail"></a>
+            <span>Mail</span>    
+        </div>
+        <div>
+			    <a href="https://www.bustedminds.cf/news.htm">
+            <img src="image/news.png" alt="News"></a>
+            <span>News</span>		    
+        </div>
+        <!-- Add more icons and text as needed -->
+    </div>
+	
+	<div id="icon-wrapper">
+		<div>
+			<a href="https://www.bustedminds.cf/ai.htm">
+            <img src="image/ai.png" alt="AI"></a>
+            <span>AI</span>			
+        </div>
+		<div>
+			<a href="https://www.bustedminds.cf/category.html">
+            <img src="image/blog.png" alt="Blog"></a>
+            <span>Blog</span>			
+        </div>
+		<div>
+			<a href="https://game.bustedminds.cf">
+            <img src="image/game.png" alt="Games"></a>
+            <span>Games</span>			
+        </div>
+		<div>
+			<a href="https://www.bustedminds.cf/livescore.htm">
+            <img src="image/soccer.png" alt="Sports"></a>
+            <span>Sports</span>
+        </div>
+        <!-- Add more icons and text as needed -->
+    </div>
+	
+	
+    </main>    	
+	<img class="test" src="image/img1.jpeg" alt="Busted Minds Search | Quality Search Results | Trusted World Wide">
+		<div><script>
+        (function(d, s, id) {
+            if (d.getElementById(id)) {
+                if (window.__TOMORROW__) {
+                    window.__TOMORROW__.renderWidget();
+                }
+                return;
+            }
+            const fjs = d.getElementsByTagName(s)[0];
+            const js = d.createElement(s);
+            js.id = id;
+            js.src = "https://www.tomorrow.io/v1/widget/sdk/sdk.bundle.min.js";
 
-    </main>    
-   
-    <img class="test" src="image/img1.jpeg">
-					   <a target="_blank" href="https://www.search.cf/classic">
-    <img class="center" src="image/BMSearchClassic.jpg" width=800" height="350"> </a>				   
-    <img class="test" src="image/img2.jpeg">
+            fjs.parentNode.insertBefore(js, fjs);
+        })(document, 'script', 'tomorrow-sdk');
+        </script>
+
+        <div class="tomorrow"
+           data-location-id=""
+           data-language="EN"
+           data-unit-system="METRIC"
+           data-skin="light"
+           data-widget-type="upcoming"
+           style="padding-bottom:22px;position:relative;"
+        >
+        </div></div>
+    <h1>Busted Minds Search</h1>
     <!-- start footer element -->
     <footer>
         <div id="country">
