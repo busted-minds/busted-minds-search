@@ -9,30 +9,30 @@
 
  /* == Base Styles | Utitlies */
 
- :root{
+:root {
     font-size: 14px;
 }
 
-*{
+* {
     box-sizing: border-box;
     font-family: Arial, sans-serif;
 }
 
-.clearfix{
+.clearfix {
     clear: both;
 }
 
-.small{
+.small {
     font-size: 13px;
 }
 
 /* == Site-Wide | Layout */
 
-a{
+a {
     text-decoration: none;
 }
 
-a:hover{
+a:hover {
     text-decoration: underline;
 }
 
@@ -40,54 +40,51 @@ img.test {
     width: 100%;
     height: auto;
 }
+
 img.center {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 55%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 55%;
     height: 25%;
 }
+
 /* == Header */
 
-header{
-   display: flex;
-   gap: 15px;
-   justify-content: flex-end; 
-   align-items: center;
-   padding: 6px;
+header {
+    display: flex;
+    gap: 15px;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 6px;
 }
 
-header a{
-    color: rgba(0,0,0,.87);
+header a {
+    color: rgba(0, 0, 0, .87);
 }
 
-header #sign-in{
+header #sign-in {
     width: 70px;
     height: 40px;
     text-align: center;
     margin: auto;
-  display: flex;
-align-items: center;
-justify-content: center;
-
-    /* background-image: linear-gradient(#f1341c, #6dd5ed); */
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background-color: #D9AFD9;
     background-image: linear-gradient(0deg, #D9AFD9 0%, #97D9E1 100%);
-    
-
     border: 1px solid transparent;
     border-radius: 5px;
-    
     color: rgb(248, 240, 240);
 }
 
-header #sign-in:hover{
+header #sign-in:hover {
     text-decoration: none;
     background-image: linear-gradient(#e62d15, #6dd5ed);
-    box-shadow: 0 1px 2px 0 rgb(66 133 244 / 30%), 0 1px 3px 1px rgb(66 133 244 / 15%);     
+    box-shadow: 0 1px 2px 0 rgb(66 133 244 / 30%), 0 1px 3px 1px rgb(66 133 244 / 15%);
 }
 
-header #btn-app{
+header #btn-app {
     border-radius: 100%;
     width: 40px;
     height: 40px;
@@ -95,18 +92,17 @@ header #btn-app{
     cursor: pointer;
 }
 
-header #btn-app:hover{
-   background-color: rgba(60,64,67,0.08);
+header #btn-app:hover {
+    background-color: rgba(60, 64, 67, 0.08);
 }
 
-header #btn-app svg{
-   fill: #5f6368;
+header #btn-app svg {
+    fill: #5f6368;
 }
-
 
 /* == Main */
 
-main{
+main {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -114,18 +110,18 @@ main{
     justify-content: center;
 }
 
-main #logo-wrapper{
+main #logo-wrapper {
     display: flex;
     align-items: center;
     height: 103px;
 }
 
-main #form-wrapper{
+main #form-wrapper {
     width: 100%;
     padding: 20px;
 }
 
-main form #search-wrapper{
+main form #search-wrapper {
     display: flex;
     max-width: 582px;
     margin: auto;
@@ -136,137 +132,135 @@ main form #search-wrapper{
     align-items: center;
 }
 
-main form #search-wrapper:hover{
-   box-shadow: 0 1px 6px rgb(32 33 36 / 28%);
-   border-color: rgba(223,225,229,0);
+main form #search-wrapper:hover {
+    box-shadow: 0 1px 6px rgb(32 33 36 / 28%);
+    border-color: rgba(223, 225, 229, 0);
 }
 
-main form #search-wrapper #icon-search{
+main form #search-wrapper #icon-search {
     padding: 0 14px;
 }
 
-main form #search-wrapper svg{
+main form #search-wrapper svg {
     width: 20px;
     height: 20px;
     fill: #5e748a;
 }
 
-main form #search-wrapper input{
+main form #search-wrapper input {
     width: 100%;
     margin-right: 10px;
     border: none;
     outline: none;
 }
 
-main form #button-wrapper{
+main form #button-wrapper {
     padding-top: 18px;
     text-align: center;
 }
 
-main form button{
+main form button {
     background-image: linear-gradient(#FFFFFF, rgb(247, 244, 243));
-   border: 1px solid #f8f9fa;
-   border-radius: 4px;
-   color: #3c4043;
-   font-family: arial,sans-serif;
-   font-size: 14px;
-   margin: 11px 4px;
-   padding: 0 16px;
-   line-height: 27px;
-   height: 36px;
-   min-width: 54px;
-   text-align: center;
-   cursor: pointer;
-   user-select: none;
+    border: 1px solid #f8f9fa;
+    border-radius: 4px;
+    color: #3c4043;
+    font-family: arial, sans-serif;
+    font-size: 14px;
+    margin: 11px 4px;
+    padding: 0 16px;
+    line-height: 27px;
+    height: 36px;
+    min-width: 54px;
+    text-align: center;
+    cursor: pointer;
+    user-select: none;
 }
 
-main form button:hover{
-   box-shadow: 0 1px 1px rgb(0 0 0 / 10%);
-   background-image: linear-gradient(#2193b0, #6dd5ed);
-   border: 1px solid #dadce0;
-   color: #f6f7fa;
+main form button:hover {
+    box-shadow: 0 1px 1px rgb(0 0 0 / 10%);
+    background-image: linear-gradient(#2193b0, #6dd5ed);
+    border: 1px solid #dadce0;
+    color: #f6f7fa;
 }
 
-main #offer-wrapper{
+main #offer-wrapper {
     font-size: 13px;
 }
 
-main #offer-wrapper a{
+main #offer-wrapper a {
     padding: 0 2px;
 }
 
-.copyright{
+.copyright {
     padding: 20px;
     color: rgb(112, 112, 112);
     text-align: center;
 }
 
+/* == Footer */
 
-
- /* == Footer */
-
- footer{
+footer {
     position: fixed;
     left: 0;
     right: 0;
-    background-image: linear-gradient(#cc2b5e, #753a88);
     bottom: 0;
-    color: #f0e4e4;
+    background-color: #f2f2f2;
+    color: #333333;
 }
 
-footer #country{
+footer #country {
     padding: 15px 30px;
     font-size: 15px;
     border-bottom: 1px solid #f4f4f5;
 }
 
 footer #country a {
-    color: #fff;
+    color: #303030;
 }
 
 footer #country a:hover {
     color: #05ddfa;
 }
 
-footer #links{
+footer #links {
     padding: 0 20px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 }
 
-footer #links > div{
+footer #links > div {
     display: flex;
     justify-content: center;
 }
 
-footer #links > div:first-child{
+footer #links > div:first-child {
     flex-wrap: wrap;
 }
 
-footer #links > div a{
-    padding:15px;
-    color: inherit;
+footer #links > div a {
+    padding: 15px;
+    color: #333333;
 }
 
 /* == Key Frames */
 
 /* == Media Queries */
 
-@media all and (max-width: 419px){
-   header{
-       justify-content: center;
-   }
-}
-
-@media all and (max-width: 664px){
-    footer #links{
-       justify-content: center;
+@media all and (max-width: 419px) {
+    header {
+        justify-content: center;
     }
 }
 
-@media all and (max-width: 1200px){
-   footer #links > div{
-       justify-content: space-evenly;
-   }
+@media all and (max-width: 664px) {
+    footer #links {
+        justify-content: center;
+    }
+}
+
+@media all and (max-width: 1200px) {
+    footer #links > div {
+        justify-content: space-evenly;
+    }
 }
