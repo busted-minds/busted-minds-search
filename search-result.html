@@ -1,15 +1,244 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+<link
+      href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+	<style>
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+
+  nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    padding: 10px;
+    color: white;
+    z-index: 2;
+  }
+
+  .content {
+    margin-top: 60px; /* Adjust this value based on your navigation bar height */
+    padding: 16px;
+  }
+
+  .gcse-searchbox,
+  .gcse-searchresults {
+    margin-top: 60px; /* Adjust this value based on your navigation bar height */
+  }
+/* Add styles for the logo and links at the bottom */
+        #bottom-content {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        .bottom-link {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #333; /* Adjust the color as needed */
+        }
+
+        #bottom-logo {
+            max-width: 60%; /* Adjust the max-width as needed */
+            height: 50px;
+            display: block;
+            margin: 20px auto;
+        }
+
+        /* Add styles for the privacy badge container */
+        #privacy-badge-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        /* Add styles for the privacy badge SVG */
+        #privacy-badge {
+            max-width: 100%;
+            height: auto;
+            margin-right: 20px; /* Adjust the margin as needed */
+        }
+
+        /* Add styles for the text next to the SVG */
+        #protect-text {
+            font-size: 16px;
+            color: #333; /* Adjust the color as needed */
+        }
+		
+		#privacy-link {
+            color: #007BFF; /* Adjust the link color as needed */
+            cursor: pointer;
+        }
+		.footersocial i {
+    width: 33px;
+    height: 33px;
+    line-height: 40px;
+    text-align: center;
+    display: inline-block;
+    background: #ffffff;
+    border-radius: 3px;
+    box-shadow: 0 6px 10px 0 rgba(0,0,0,0.1);
+    font-size: 18px;
+    margin-left: 4px;
+    color: #3c3838;
+    margin-top: 10px;
+}
+    </style>
+        <link rel="stylesheet" href="node_modules/reset.css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+	
+
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Search Results</title>
     <link rel="icon" href="image/favicon.ico" type="image/x-icon">
 </head>
-<body>
-  <center>  <a href="index.html"><img style="width: 310px; height: 100px; " src="image/busted-minds-search.jpg" alt="Busted Minds Search"></a> </center>
-    <script async src="https://cse.google.com/cse.js?cx=ac27f80ff57c337da"></script>
-<div class="gcse-search"></div>
+<body width = "device-width">
+<nav>
+      <div class="logo">
+        <i class="bx bx-menu menu-icon"></i>
+<a href="https://search.bustedminds.cf/">
+  <img class="slogo-name" src="https://search.bustedminds.cf/image/busted-minds-search.jpg" >
+</a>
+      </div>
+      <div class="sidebar">
+	          <div class="logo">
+          <i class="bx bx-menu menu-icon"></i>
+		<a href="https://www.bustedminds.cf/" target="_blank">
+        <center>
+            <img src="https://www.bustedminds.cf/images/Busted-Minds-Logo.png" style="width: 85%; height: 48px;">
+        </center>
+    </a></div>
+        <div class="sidebar-content">
+          <ul class="lists">
+            <li class="list">
+              <a href="https://busted-minds.github.io/about.html" class="nav-link">
+                <i class="bx bx-heart icon"></i>
+                <span class="link">About Us</span>
+              </a>
+            </li>
+            <li class="list">
+              <a href="https://busted-minds.github.io/contact.html" class="nav-link">
+                <i class="bx bx-support icon"></i>
+                <span class="link">Support</span>
+              </a>
+            </li>
+            <li class="list">
+              <a href="https://busted-minds.github.io/contact.html" class="nav-link">
+                <i class="bx bxs-business icon"></i>
+                <span class="link">Business</span>
+              </a>
+            </li>
+            <li class="list">
+              <a href="https://busted-minds.github.io/contact.html" class="nav-link">
+                <i class="bx bx-chat icon"></i>
+                <span class="link">Feedback</span>
+              </a>
+            </li>
+            <li class="list">
+              <a href="https://busted-minds.github.io/privacy-policy.html" class="nav-link">
+                <i class="bx bx-lock-open-alt icon"></i>
+                <span class="link">Privacy</span>
+              </a>
+            </li>
+            <li class="list">
+              <a href="https://busted-minds.github.io/terms-and-conditions.html" class="nav-link">
+                <i class="bx bx-book-alt icon"></i>
+                <span class="link">Terms</span>
+              </a>
+            </li>
+          <li class="list">
+              <a href="https://discord.gg/zGjyXFQbMh" class="nav-link">
+                <i class="bx bx-world icon"></i>
+                <span class="link">Join</span>
+              </a>
+            </li>
+          </ul>
+		  <br>
+          <div class="bottom-cotent">
+            <div><script>
+        (function(d, s, id) {
+            if (d.getElementById(id)) {
+                if (window.__TOMORROW__) {
+                    window.__TOMORROW__.renderWidget();
+                }
+                return;
+            }
+            const fjs = d.getElementsByTagName(s)[0];
+            const js = d.createElement(s);
+            js.id = id;
+            js.src = "https://www.tomorrow.io/v1/widget/sdk/sdk.bundle.min.js";
+
+            fjs.parentNode.insertBefore(js, fjs);
+        })(document, 'script', 'tomorrow-sdk');
+        </script>
+
+        <div class="tomorrow"
+           data-location-id=""
+           data-language="EN"
+           data-unit-system="METRIC"
+           data-skin="light"
+           data-widget-type="upcoming"
+           style="padding-bottom:22px;position:relative;"
+        >
+        </div></div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <section class="overlay"></section>
+    
+<div class="content">
+    <script async src="https://cse.google.com/cse.js?cx=1290f1861e322472e">
+</script>
+<div class="gcse-searchbox"></div>
+  <div class="gcse-searchresults"></div></div>
+	<div id="bottom-content">
+<a href="https://www.bustedminds.cf/" target="_blank">
+        <img id="bottom-logo" src="https://www.bustedminds.cf/images/Busted-Minds-Logo.png" alt="Busted Minds Logo"> <br><br>
+    </a>
+    <a class="bottom-link" href="https://busted-minds.github.io/terms-and-conditions.html">Terms</a> <br><br>
+    <a class="bottom-link" href="https://busted-minds.github.io/about.html">About</a> <br><br>
+    <a class="bottom-link" href="https://busted-minds.github.io/contact.html">Business</a> <br>
+		<br><br>
+<div class="footersocial">	<a href="https://instagram.com/busted.minds.community"> <i class="bx bxl-instagram"></i></a>
+					<a href="https://discord.gg/zGjyXFQbMh"> <i class="bx bxl-discord"></i></a>
+					<a href="https://github.com/busted-minds"> <i class="bx bxl-github"> </i></a>
+					<a href="https://youtube.com/channel/UCG1XCLvmikpNHFzuQBNSIRA?sub_confirmation=1"> <i class="bx bxl-youtube"></i></a>
+					<a href="https://pin.it/3tKZ8nh"><i class="bx bxl-pinterest"> </i></a>
+					<a href="https://t.me/joinchat/adSjLVRvEeY3NDM1"> <i class="bx bxl-telegram"></i></a>
+	                                <a href="https://www.linkedin.com/company/bustedminds/"> <i class="bx bxl-linkedin"></i></a>
+					<a href="https://bustedmindscommunity.quora.com/"> <i class="bx bxl-quora"></i></a>
+					</div>	<br><br>
+    <!-- Include the privacy badge SVG -->
+	<div id="privacy-badge-container">
+        <img id="privacy-badge" src="https://www.startpage.com/sp/cdn/images/home/default/privacy-please-badge-new.svg" alt="Privacy Badge">
+         <span id="protect-text">Learn more about how <br>we protect your privacy.<br>Visit our <a id="privacy-link" href="https://busted-minds.github.io/privacy-policy.html">privacy policy</a></span>
+    </div>
+	</div>
+
+    <script>
+      const navBar = document.querySelector("nav"),
+        menuBtns = document.querySelectorAll(".menu-icon"),
+        overlay = document.querySelector(".overlay");
+
+      menuBtns.forEach((menuBtn) => {
+        menuBtn.addEventListener("click", () => {
+          navBar.classList.toggle("open");
+        });
+      });
+
+      overlay.addEventListener("click", () => {
+        navBar.classList.remove("open");
+      });
+    </script>  
 </body>
 </html>
