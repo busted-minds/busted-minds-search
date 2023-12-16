@@ -3,7 +3,10 @@
 <head>
 <!-- Add this line to include Font Awesome CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-
+<link
+      href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
+      rel="stylesheet"
+    />
     <!-- Your existing code remains unchanged here -->
 
     <style>
@@ -32,8 +35,67 @@
             height: 40px; /* Adjust the height of the image as needed */
             margin-bottom: 5px; /* Adjust the margin as needed */
 		}
-    </style>
+		
+/* Add styles for the logo and links at the bottom */
+        #bottom-content {
+            text-align: center;
+            margin: 20px 0;
+        }
 
+        .bottom-link {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #333; /* Adjust the color as needed */
+        }
+
+        #bottom-logo {
+            max-width: 60%; /* Adjust the max-width as needed */
+            height: 50px;
+            display: block;
+            margin: 20px auto;
+        }
+
+        /* Add styles for the privacy badge container */
+        #privacy-badge-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        /* Add styles for the privacy badge SVG */
+        #privacy-badge {
+            max-width: 100%;
+            height: auto;
+            margin-right: 20px; /* Adjust the margin as needed */
+			
+        }
+
+        /* Add styles for the text next to the SVG */
+        #protect-text {
+            font-size: 16px;
+            color: #333; /* Adjust the color as needed */
+        }
+		
+		#privacy-link {
+            color: #007BFF; /* Adjust the link color as needed */
+            cursor: pointer;
+        }
+	    .footersocial i {
+    width: 33px;
+    height: 33px;
+    line-height: 40px;
+    text-align: center;
+    display: inline-block;
+    background: #ffffff;
+    border-radius: 3px;
+    box-shadow: 0 6px 10px 0 rgba(0,0,0,0.1);
+    font-size: 18px;
+    margin-left: 4px;
+    color: #3c3838;
+    margin-top: 10px;
+}
+    </style>
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"> <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png"> <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"> <link rel="manifest" href="/site.webmanifest"> <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"> <meta name="msapplication-TileColor" content="#da532c"> <meta name="theme-color" content="#ffffff">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -47,15 +109,105 @@
 	
 </head>
 <body width = "device-width">
+<nav>
+      <div class="logo">
+        <i class="bx bx-menu menu-icon"></i>
+      </div>
+      <div class="sidebar">
+	          <div class="logo">
+          <i class="bx bx-menu menu-icon"></i>
+		<a href="https://www.bustedminds.cf/" target="_blank">
+        <center>
+            <img src="https://www.bustedminds.cf/images/Busted-Minds-Logo.png" style="width: 85%; height: 48px;">
+        </center>
+    </a></div>
+        <div class="sidebar-content">
+          <ul class="lists">
+            <li class="list">
+              <a href="https://busted-minds.github.io/about.html" class="nav-link">
+                <i class="bx bx-heart icon"></i>
+                <span class="link">About Us</span>
+              </a>
+            </li>
+            <li class="list">
+              <a href="https://busted-minds.github.io/contact.html" class="nav-link">
+                <i class="bx bx-support icon"></i>
+                <span class="link">Support</span>
+              </a>
+            </li>
+            <li class="list">
+              <a href="https://busted-minds.github.io/contact.html" class="nav-link">
+                <i class="bx bxs-business icon"></i>
+                <span class="link">Business</span>
+              </a>
+            </li>
+            <li class="list">
+              <a href="https://busted-minds.github.io/contact.html" class="nav-link">
+                <i class="bx bx-chat icon"></i>
+                <span class="link">Feedback</span>
+              </a>
+            </li>
+            <li class="list">
+              <a href="https://busted-minds.github.io/privacy-policy.html" class="nav-link">
+                <i class="bx bx-lock-open-alt icon"></i>
+                <span class="link">Privacy</span>
+              </a>
+            </li>
+            <li class="list">
+              <a href="https://busted-minds.github.io/terms-and-conditions.html" class="nav-link">
+                <i class="bx bx-book-alt icon"></i>
+                <span class="link">Terms</span>
+              </a>
+            </li>
+			<li class="list">
+              <a href="https://discord.gg/zGjyXFQbMh" class="nav-link">
+                <i class="bx bx-world icon"></i>
+                <span class="link">Join</span>
+              </a>
+            </li>
+          </ul>
+		  <br>
+          <div class="bottom-cotent">
+            <div><script>
+        (function(d, s, id) {
+            if (d.getElementById(id)) {
+                if (window.__TOMORROW__) {
+                    window.__TOMORROW__.renderWidget();
+                }
+                return;
+            }
+            const fjs = d.getElementsByTagName(s)[0];
+            const js = d.createElement(s);
+            js.id = id;
+            js.src = "https://www.tomorrow.io/v1/widget/sdk/sdk.bundle.min.js";
 
-<header>
+            fjs.parentNode.insertBefore(js, fjs);
+        })(document, 'script', 'tomorrow-sdk');
+        </script>
 
-</header>
+        <div class="tomorrow"
+           data-location-id=""
+           data-language="EN"
+           data-unit-system="METRIC"
+           data-skin="light"
+           data-widget-type="upcoming"
+           style="padding-bottom:22px;position:relative;"
+        >
+        </div></div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <section class="overlay"></section>
+
+
   <!-- Start Main Element -->
     <main>
+	<br><br><br>
         <div id="logo-wrapper">
-            <img src="image/busted-minds-search.jpg" style="max-width: 80%; height: 100px; display: block; margin: auto;" alt="Busted Minds Search">
-	</div>
+            <img src="image/busted-minds-search.jpg" style="max-width: 86%; height: 100px; display: block; margin: auto;" alt="Busted Minds Search">
+        </div>
+		<br><br>
         <div id="form-wrapper">
             <form action="search-result.html" method="GET" enctype="application/x-www-form-urlencoded">
                 <div id="search-wrapper">
@@ -121,48 +273,49 @@
         <!-- Add more icons and text as needed -->
     </div>
 	<br>	
-<br><br><br><br><br><br><br><br><br><br><br><br><br>
-	
+<br><br><br><br><br><br><br><br><br><br><br><br><br>	
     </main>    	
 	<img class="test" src="image/img1.jpeg" alt="Busted Minds Search | Quality Search Results | Trusted World Wide">
-		<div><script>
-        (function(d, s, id) {
-            if (d.getElementById(id)) {
-                if (window.__TOMORROW__) {
-                    window.__TOMORROW__.renderWidget();
-                }
-                return;
-            }
-            const fjs = d.getElementsByTagName(s)[0];
-            const js = d.createElement(s);
-            js.id = id;
-            js.src = "https://www.tomorrow.io/v1/widget/sdk/sdk.bundle.min.js";
+		
+		<div id="bottom-content">
+<a href="https://www.bustedminds.cf/" target="_blank">
+        <img id="bottom-logo" src="https://www.bustedminds.cf/images/Busted-Minds-Logo.png" alt="Busted Minds Logo"> <br><br>
+    </a>
+    <a class="bottom-link" href="https://busted-minds.github.io/terms-and-conditions.html">Terms</a> <br><br>
+    <a class="bottom-link" href="https://busted-minds.github.io/about.html">About</a> <br><br>
+    <a class="bottom-link" href="https://busted-minds.github.io/contact.html">Business</a> <br>
+			<br><br>
+<div class="footersocial">	<a href="https://instagram.com/busted.minds.community"> <i class="bx bxl-instagram"></i></a>
+					<a href="https://discord.gg/zGjyXFQbMh"> <i class="bx bxl-discord"></i></a>
+					<a href="https://github.com/busted-minds"> <i class="bx bxl-github"> </i></a>
+					<a href="https://youtube.com/channel/UCG1XCLvmikpNHFzuQBNSIRA?sub_confirmation=1"> <i class="bx bxl-youtube"></i></a>
+					<a href="https://pin.it/3tKZ8nh"><i class="bx bxl-pinterest"> </i></a>
+					<a href="https://t.me/joinchat/adSjLVRvEeY3NDM1"> <i class="bx bxl-telegram"></i></a>
+	                                <a href="https://www.linkedin.com/company/bustedminds/"> <i class="bx bxl-linkedin"></i></a>
+					<a href="https://bustedmindscommunity.quora.com/"> <i class="bx bxl-quora"></i></a>
+					</div>	<br><br>
+    <!-- Include the privacy badge SVG -->
+	<div id="privacy-badge-container">
+        <img id="privacy-badge" src="https://www.startpage.com/sp/cdn/images/home/default/privacy-please-badge-new.svg" alt="Privacy Badge">
+         <span id="protect-text">Learn more about how <br>we protect your privacy.<br>Visit our <a id="privacy-link" href="https://busted-minds.github.io/privacy-policy.html">privacy policy</a></span>
+    </div>
+	</div>		
+		</div>
+		  
+  <script>
+      const navBar = document.querySelector("nav"),
+        menuBtns = document.querySelectorAll(".menu-icon"),
+        overlay = document.querySelector(".overlay");
 
-            fjs.parentNode.insertBefore(js, fjs);
-        })(document, 'script', 'tomorrow-sdk');
-        </script>
+      menuBtns.forEach((menuBtn) => {
+        menuBtn.addEventListener("click", () => {
+          navBar.classList.toggle("open");
+        });
+      });
 
-        <div class="tomorrow"
-           data-location-id=""
-           data-language="EN"
-           data-unit-system="METRIC"
-           data-skin="light"
-           data-widget-type="upcoming"
-           style="padding-bottom:22px;position:relative;"
-        >
-        </div></div>
-    <!-- start footer element -->
-    <footer>
-            <div id="links">      
-            <div>
-						 <a target="_blank" href="https://busted-minds.github.io/privacy-policy.html">Privacy</a>
-                         <a target="_blank" href="https://busted-minds.github.io/terms-and-conditions.html">Terms</a>
-                         <a target="_blank" href="https://busted-minds.github.io/contact.html">Business</a>
-		    <a target="_blank" href="https://busted-minds.github.io/about.html">About</a>
-                </div>
-        </div>
-    </footer>
-    <!-- end footer element -->
-    
+      overlay.addEventListener("click", () => {
+        navBar.classList.remove("open");
+      });
+    </script>   
 </body>
 </html>
