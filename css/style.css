@@ -294,19 +294,24 @@ nav .logo {
   font-weight: 500;
 }
 
-.logo .slogo-name {
-  color: #333;
-  font-size: 22px;
-  font-weight: 500;
-  margin: 0 600px;
-  width: 40%;
+.logo .slogo-name {  
+  margin: 0 250%;
+  max-width: 100%;
   height: 60px;
 }
 
 @media only screen and (max-width: 768px) {
   .logo .slogo-name {
-    margin: 0 40px; /* Adjust the margin for smaller screens */
-    width: auto;   /* Allow the width to adjust based on the screen size */
+    margin: 0 15%; /* Adjust the margin for smaller screens */
+	height: 60px;
+  }
+}
+
+@media only screen and (max-width: 300px) {
+  .logo .slogo-name {
+    margin: 0 auto;
+    width: 150px;   /* Allow the width to adjust based on the screen size */
+	height: 40px;
   }
 }
 
